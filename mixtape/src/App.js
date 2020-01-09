@@ -1,8 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import queryString from 'query-string';
 
 function App() {
+
+  let parsed = queryString.parse(window.location.search);
+  console.log(parsed);
+
   return (
     <div className="App">
       <header className="App-header">
